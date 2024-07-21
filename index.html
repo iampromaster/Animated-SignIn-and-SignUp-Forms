@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="btn-wrapper">
+        <button
+          class="toggle-btn"
+          onclick="signin()">
+          Sign In
+        </button>
+        <button
+          class="toggle-btn"
+          onclick="signup()">
+          Sign Up
+        </button>
+        <div class="indicator"></div>
+      </div>
+
+      <form
+        action="#"
+        class="signin-form">
+        <input
+          type="text"
+          class="input"
+          placeholder="Email Address"
+          required />
+        <input
+          type="password"
+          class="input"
+          placeholder="Enter Password"
+          required />
+        <div class="check-box">
+          <input
+            type="checkbox"
+            id="check" />
+          <label for="check">Remember Me</label>
+        </div>
+        <button type="submit">Sign in</button>
+      </form>
+
+      <form
+        action="#"
+        class="signup-form">
+        <input
+          type="text"
+          class="input"
+          placeholder="Full Name"
+          required />
+        <input
+          type="text"
+          class="input"
+          placeholder="Email Address"
+          required />
+        <input
+          type="password"
+          class="input"
+          placeholder="Enter Password"
+          required />
+        <input
+          type="password"
+          class="input"
+          placeholder="Confirm Password"
+          required />
+        <div class="check-box">
+          <input
+            type="checkbox"
+            id="check2" />
+          <label for="check2">I agree to the Terms & Conditions</label>
+        </div>
+        <button type="submit">Sign up</button>
+      </form>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
